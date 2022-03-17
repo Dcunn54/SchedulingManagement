@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.ReportsController">
+   <children>
+      <Label layoutX="9.0" layoutY="14.0" text="Reports">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="appMonthComBox" layoutX="17.0" layoutY="220.0" onAction="#onActionAppsByMonth" prefWidth="150.0" />
+      <ComboBox fx:id="appTypeComBox" layoutX="18.0" layoutY="127.0" onAction="#onActionAppsByType" prefWidth="150.0" />
+      <Label layoutX="73.0" layoutY="100.0" text="Type">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="193.0" text="Month">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="183.0" layoutY="132.0" text="Number of Appointments: " />
+      <Label layoutX="183.0" layoutY="225.0" text="Number of Appointments: " />
+      <TextField fx:id="appCountTypeTxt" editable="false" layoutX="361.0" layoutY="127.0" prefHeight="31.0" prefWidth="83.0" />
+      <TextField fx:id="appCountMonthTxt" editable="false" layoutX="361.0" layoutY="220.0" prefHeight="31.0" prefWidth="83.0" />
+      <ComboBox fx:id="appContactComBox" layoutX="18.0" layoutY="308.0" onAction="#onActionContactSchedule" prefWidth="150.0" />
+      <Label layoutX="62.0" layoutY="281.0" text="Contact">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="183.0" layoutY="313.0" text="Contact's Schedule: " />
+      <ComboBox fx:id="appCustComBox" layoutX="480.0" layoutY="127.0" onAction="#onActionAppsByCust" prefWidth="150.0" />
+      <Label layoutX="517.0" layoutY="100.0" text="Customer">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="521.0" layoutY="193.0" text="Location">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="appLocComBox" layoutX="480.0" layoutY="220.0" onAction="#onActionAppsByLoc" prefWidth="150.0" />
+      <Label layoutX="644.0" layoutY="132.0" text="Number of Appointments: " />
+      <TextField fx:id="appCountCustTxt" editable="false" layoutX="822.0" layoutY="127.0" prefHeight="31.0" prefWidth="83.0" />
+      <Label layoutX="644.0" layoutY="225.0" text="Number of Appointments: " />
+      <TextField fx:id="appCountLocTxt" editable="false" layoutX="822.0" layoutY="220.0" prefHeight="31.0" prefWidth="83.0" />
+      <Button fx:id="cancelBtn" layoutX="846.0" layoutY="583.0" mnemonicParsing="false" onAction="#onActionReturnToMain" prefHeight="50.0" prefWidth="90.0" text="Cancel" />
+      <TableView fx:id="contactSchecduleTbl" layoutX="177.0" layoutY="339.0" prefHeight="233.0" prefWidth="757.0">
+        <columns>
+          <TableColumn fx:id="appIDCol" prefWidth="75.0" text="Appt ID" />
+          <TableColumn fx:id="appTitleCol" prefWidth="75.0" text="Title" />
+            <TableColumn fx:id="appTypeCol" prefWidth="125.0" text="Type" />
+            <TableColumn fx:id="appDescCol" prefWidth="125.0" text="Description" />
+            <TableColumn fx:id="appStartCol" prefWidth="140.0" text="Start Date/Time" />
+            <TableColumn fx:id="appEndCol" prefWidth="140.0" text="End Date/Time" />
+            <TableColumn fx:id="appCustIDCol" prefWidth="75.0" text="Cstmr ID" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

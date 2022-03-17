@@ -16,14 +16,4 @@ IDE w/ version number: NetBeans IDE 11.3
 JDK of version 11 used: Java SE 11.0.10
 JavaFX version: 11.0.2
 
-•   directions for how to run the program:
 
-run the c195_Project.jar file
-
-•   a description of the additional report of your choice you ran in part A3f:
-
-The rports I added were to display the number of appointments based on the user's selection of a customer, and to display the number of appointments based on the user's selection of a location
-
-•   the MySQL Connector driver version number, including the update number (e.g., mysql-connector-java-8.1.23):
-
-version 8.0.22
